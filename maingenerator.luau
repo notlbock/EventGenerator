@@ -3,6 +3,6 @@ local Events = {
   "Flood"
 }
 local Event = Events[math.random(1,#Events)]
-local EventModule = require(script.Parent.Events:FindFirstChild(Event))
+local EventModule = require(script.Parent.Events:FindFirstChild(Event..".luau"))
 
 EventModule.Main()
